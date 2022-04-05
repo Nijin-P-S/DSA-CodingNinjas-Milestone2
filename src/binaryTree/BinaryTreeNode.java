@@ -1,9 +1,9 @@
 package binaryTree;
 
 public class BinaryTreeNode <T>{
-        binaryTree.BinaryTreeNode<T> left;
-        binaryTree.BinaryTreeNode<T> right;
-        T data;
+        public binaryTree.BinaryTreeNode<T> left;
+        public binaryTree.BinaryTreeNode<T> right;
+        public   T data;
         BinaryTreeNode(T data){
             left = null;
             right = null;
