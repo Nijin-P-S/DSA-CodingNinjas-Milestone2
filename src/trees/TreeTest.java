@@ -41,5 +41,7 @@ public class TreeTest {
         node2.children.add(node5);
 
         printTreePreOrderBetter(root);
+
+        System.out.println(NumberOfNodes.countNumberOfNodes(root));
     }
 }
