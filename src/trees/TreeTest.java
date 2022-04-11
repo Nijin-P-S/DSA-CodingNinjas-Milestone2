@@ -1,6 +1,23 @@
 package trees;
 
+import java.util.Scanner;
+
 public class TreeTest {
+
+    public static TreeNode<Integer> takeInputRecursive(){
+        System.out.println("Enter the data of your node :");
+        Scanner input = new Scanner(System.in);
+        int data = input.nextInt();
+        TreeNode<Integer> root = new TreeNode<>(data);
+        System.out.println("Enter the number of children for "+root.data);
+        int count = input.nextInt();
+
+        for(int i=0; i<count; i++){
+            root.children.add(takeInputRecursive());
+        }
+
+        return root;
+    }
 
     public static void printTreePreOrderBetter(TreeNode<Integer> root){
         if(root == null)
@@ -40,7 +57,9 @@ public class TreeTest {
         node2.children.add(node4);
         node2.children.add(node5);
 
-        printTreePreOrderBetter(root);
+        TreeNode<Integer> newRoot = takeInputRecursive();
+
+        printTreePreOrderBetter(newRoot);
 
         System.out.println(NumberOfNodes.countNumberOfNodes(root));
     }
