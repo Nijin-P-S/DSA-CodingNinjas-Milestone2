@@ -2,6 +2,20 @@ package trees;
 
 public class TreeTest {
 
+    public static void printTreePreOrderBetter(TreeNode<Integer> root){
+        if(root == null)
+            return;
+
+        System.out.print(root.data+": ");
+        for (TreeNode<Integer> node : root.children){
+            System.out.print(node.data+" ");
+        }
+        System.out.println();
+        for (TreeNode<Integer> node : root.children){
+            printTreePreOrderBetter(node);
+        }
+    }
+
     public static void printTreePreOrder(TreeNode<Integer> root){
         if(root == null)
             return;
@@ -26,6 +40,6 @@ public class TreeTest {
         node2.children.add(node4);
         node2.children.add(node5);
 
-        printTreePreOrder(root);
+        printTreePreOrderBetter(root);
     }
 }
