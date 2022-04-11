@@ -1,3 +1,4 @@
+package binaryTree;
 /*
 For a given a Binary Tree of type integer, print the complete information of every node,
 when traversed in a level-order fashion.
@@ -9,7 +10,6 @@ import binaryTree.BinaryTreeNode;
 import java.util.LinkedList;
 import java.util.Queue;
 
-package binaryTree;
 
 public class PrintLevelWise {
     public static void printLevelWise(BinaryTreeNode<Integer> root) {
