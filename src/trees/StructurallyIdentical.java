@@ -11,7 +11,7 @@ import java.util.LinkedList;
 
 public class StructurallyIdentical {
     public static boolean checkIdentical(TreeNode<Integer> root1, TreeNode<Integer> root2){
-        
+
         if(root1 == null || root2 == null)
             return false;
 
