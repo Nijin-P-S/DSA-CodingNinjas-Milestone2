@@ -1,4 +1,4 @@
-package binarySearchTree;
+package binarySearchTree_1;
 
 import binaryTree.BinaryTreeNode;
 

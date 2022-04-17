@@ -1,4 +1,4 @@
-package binarySearchTree;
+package binarySearchTree_1;
 
 /*
 Given a sorted integer array A of size n, which contains all unique elements.
@@ -24,7 +24,7 @@ public class ConstructBST {
 
 
     }
-    
+
     public static BinaryTreeNode<Integer> SortedArrayToBST(int[] arr, int n){
         if(n==0)
             return null;
