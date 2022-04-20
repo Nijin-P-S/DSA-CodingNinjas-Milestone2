@@ -9,7 +9,7 @@ The respective order of characters should remain same, as in the input string.
 public class ExtractUniqueCharacters {
 
     public static String uniqueChar(String str){
- 
+
         StringBuilder result = new StringBuilder();
 
         HashMap<Character, Integer> hashMap = new HashMap<>();
